@@ -1,131 +1,276 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
 
-<head>
-	<meta charset="utf-8">
+		<title>Vom Datenchaos zum Kulturschatz</title>
 
-<title>Vom Datenchaos zum Kulturschatz</title>
-
-		<meta name="description" content="A workshop on how to work with OpenRefine for cultural data.">
+		<meta name="description" content="Einfach erklärt, direkt ausprobiert">
 		<meta name="author" content="Roman Kuhn">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/sky.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+         <section data-background-image="media/Logo_StabiLab_4c.svg" data-background-position="top 40px right 30px"
+				data-background-size="150px" data-markdown data-separator="^\n---\n" data-separator-vertical="^\n--\n" data-separator-vertical="^\n--\n" data-charset="utf-8">
+          <script type="text/template">
+          <!--content goes here-->
 
-	<title>reveal.js</title>
+          ## Vom <del>Datenchaos</del> zum Kulturschatz
 
-	<link rel="stylesheet" href="dist/reset.css">
-	<link rel="stylesheet" href="dist/reveal.css">
-	<link rel="stylesheet" href="dist/theme/sky.css">
-
-	<!-- Theme used for syntax highlighted code -->
-	<link rel="stylesheet" href="plugin/highlight/monokai.css">
-</head>
-
-<body>
-	<div class="reveal">
-		<div class="slides">
-			<section data-background-image="media/Logo_StabiLab_4c.svg" data-background-position="top 40px right 30px"
-				data-background-size="200px">
-				<h2>Vom <s>Datenchaos</s> zum Kulturschatz</h2>
-				<h3>Einfach erklärt, direkt ausprobiert</h3>
-				<div><img height="100px" src="media/logo_zdf.png" </img><img height="100px"
-						src="media/digital-humanities-schmal.png" </img></div>
-				<p>09. Juli 2025</p>
-			</section>
-
-			<section data-background-image="media/Logo_StabiLab_4c.svg" data-background-position="top 40px right 30px"
-				data-background-size="200px">
-				<h2>Vorab</h2>
-				<h3>Folien & Daten</h3>
-				<a href="https://r0man-ist.github.io/OR">Folien</a> (t1p.de/lj2s2)</br>
-
-				<a href="https://github.com/r0man-ist/OR/">Repositorium</a> (https://r0man-ist.github.io/OR)
-
-			</section>
+          ### Einfach erklärt, direkt ausprobiert
+          
+<img src="media/digital-humanities-schmal.png" style="height: 70px; margin: 0 auto 4rem auto; background: transparent;">
+<img src="media/logo_zdf.png" style="height: 70px; margin: 0 auto 4rem auto; background: transparent;">
 
 
-			<section data-background-image="media/Logo_StabiLab_4c.svg" data-background-position="top 40px right 30px"
-				data-background-size="200px">
-				<h2>Vorab</h2>
-				<h3>OpenRefine</h3>
-				<div><img height="100px" src="media/openrefine_logo.svg" </img>
-					<p><a href="https://openrefine.org/download">Download</a> & <a
-							href="https://openrefine.org/docs/manual/installing">Installation</a></a></p>
-				</div>
-			</section>
-
-			<section data-background-image="media/Logo_StabiLab_4c.svg" data-background-position="top 40px right 30px"
-				data-background-size="200px">
-
-				<h2 text-align: center;">Ablauf</h2>
-				<div style="font-size: 15px; line-height: 0.5 em;">
-					<p>10:00 - CheckIn</p>
-					<p>10:05 - Mini-Vorstellung</p>
-					<p>10:15 - Open Refine & Kulturdaten</p>
-					<p>10:20 - Beispiel 1: Datenbereinigung</p>
-					<p>10:50 - Pause</p>
-					<p>11:00 - Beispiel 2: Schnittstellenabfragen</p>
-					<p>11:30 - Pause</p>
-					<p>11:40 - Beispiel 3: Textmanipulationen</p>
-					<p>12:10 - Pause</p>
-					<p>12:30 - Beispiel 4: Reconciliation</p>
-					<p>13:00 - Pause</p>
-					<p>13:10 - Teaser: KI & OpenRefine</p>
-					<p>13:20 - Feedback & Survey</p>
-				</div>
-			</section>
+          9. Juli 2025
 
 
+          ---
+          
+          
+          [Slides](https://r0man-ist.github.io/OR/): https://t1p.de/6lo2l
+
+          Daten: https://github.com/r0man-ist/OR
+
+          Kontakt: roman.kuhn@sbb.spk-berlin.de
+
+---
+
+---
+
+### Vorab
+
+https://openrefine.org/
+
+<img src="media/openrefine_logo.svg" style="height: 400px; margin: 0 auto 4rem auto; background: transparent;">
 
 
-<section>
-		<section data-background-image="media/Logo_StabiLab_4c.svg" data-background-position="top 40px right 30px" data-background-size="200px">
-            <h2>Beispiel 1</h2>
-            <h3>Einstieg, Datenbereinigung</h3>
-        </section>
+---
+
+### Ablauf
+
+<div style="overflow:scroll; height:600px;">
+10.00 CheckIn
+
+10.05-10.15 Mini-Vorstellung
+
+10.15-10.20 Open Refine & Kulturdaten 
+
+10.20-10.50 Beispiel 1: Einstieg, Datenbereinigung
+
+11.00-11:30 Beispiel 2: Schnittstellenabfrage
+
+11:40-12:10 Beispiel 3: Textmanipulationen
+
+12:30-13:00 Beispiel 4: Reconciliation
+
+13:10-13:20 Teaser: KI & OpenRefine
+
+13.20-13.30 Feedback & Survey
+</div>
+
+---
+### Beispiel #1
+#### Einstieg, Datenbereinigung
+
+<img src="media/names.png" style="height: 400px; margin: 0 auto 4rem auto; background: transparent;">
+
+--
+
+#### Einstieg, Datenbereinigung
+- Filter
+- Facetten
+- Sotieren
+- Daten korrigieren
+- Datentypen anpassen
+
+--
+
+#### Einstieg, Datenbereinigung
+
+- Daten Clustern
+
+<img src="media/cluster.png" style="height: 400px; margin: 0 auto 4rem auto; background: transparent;">
+
+--
+
+#### Einstieg, Datenbereinigung
+
+- Export
+- Speichern
+- Import
+- Undo/Redo
+
+
+
+---
+
+### Beispiel #2
+#### Schnittstellenabfrage
+
+<img src="media/heisenberg.png" style="height: 400px; margin: 0 auto 4rem auto; background: transparent;">
+
+
+--
+
+#### Schnittstellenabfrage
+
+[Nachlass Werner Heisenberg](https://kalliope-verbund.info/findingaid?fa.id=DE-611-BF-73161&htmlFull=false&lang=de&fa.enum=7648&q.page=0&lastparam=true#1)
+
+<pre><code> https://kalliope-verbund.info/sru?version=1.2&operation=searchRetrieve&query=ead.archdesc.id=%22DE-611-BF-73161%22%20AND%20ead.unitdate_start%3E=1945%20AND%20ead.unitdate_end%3C=1945&recordSchema=dc
+</code></pre>
+
+[Abfrage]( https://kalliope-verbund.info/sru?version=1.2&operation=searchRetrieve&query=ead.archdesc.id=%22DE-611-BF-73161%22%20AND%20ead.unitdate_start%3E=1945%20AND%20ead.unitdate_end%3C=1945&recordSchema=dc
+)
+
+[Schnittstellenbeschreibung](https://lab.sbb.berlin/kpe/)
+
+--
+
+#### Schnittstellenabfrage
+
+- Record vs. Row
+- Filtern
+- Join/Split
+
+<img src="media/letters.png" style="height: 400px; margin: 0 auto 4rem auto; background: transparent;">
+
+--
+
+#### Schnittstellenabfrage
+
+- weitere Abfragen
+
+<pre><code> https://kalliope-verbund.info/sru?version=1.2&operation=searchRetrieve&query=ead.id=DE-611-HS-3648708&recordSchema=mods
+</code></pre>
+
+- Parsen (xml/html)
+
+<img src="media/parseXml.png" style="height: 400px; margin: 0 auto 4rem auto; background: transparent;">
+
+
+---
+
+#### Schnittstellenabfrage
+Anderer Katalog, andere Schnittstelle, andere Datenformate
+
+<pre><code>https://sru.k10plus.de/opac-de-1?recordSchema=dc&operation=searchRetrieve&version=1.1&maximumRecords=100&query=pica.xjah=1945+and+pica.xbkl=17.97
+</code></pre>
+
+--
+
+#### Schnittstellenabfrage
+
+GREL (General Refine Expression Language)
+[Expressions / Functions](https://openrefine.org/docs/manual/expressions)
+
+---
+
+
+### Beispiel #3
+#### Textmanipulationen
+
+[Brief von Magnus Hirschfeld an Gerhart Hauptmann](https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN771823622&PHYSID=PHYS_0001&DMDID=)
+
+<img src="media/wlsr.png" style="height: 400px; margin: 0 auto 4rem auto; background: transparent;">
+
+--
+
+#### Textmanipulationen
+- split
+- replace
+- Reguläre Ausdrücke 
+(https://regex101.com https://regexlearn.com/)
+
+
+---
+
+### Beispiel #4
+#### Reconciliation
+
+---
+
+### Teaser
+#### KI & OpenRefine
+
+<img src="media/suffrage.png" style="height: 400px; margin: 0 auto 4rem auto; background: transparent;">
+
+
+<pre><code>https://chroniclingamerica.loc.gov/search/pages/results/?state=Nevada&date1=1870&date2=1910&proxtext=suffrage&x=16&y=5&dateFilterType=yearRange&rows=20&searchType=basic&itemsPerPage=30&format=json
+</code></pre>
+
+--
+
+#### KI & OpenRefine
+
+<img src="media/openAI.png" style="height: 400px; margin: 0 auto 4rem auto; background: transparent;">
+
+--
+
+#### KI & OpenRefine
+
+<img src="media/ai.png" style="height: 400px; margin: 0 auto 4rem auto; background: transparent;">
+
+--
+
+#### KI & OpenRefine
+
+Prompt:
+<div style="overflow:scroll; height:600px;">
+
+You are an expert in histroical newspapers and historical women's rights movements.
+
+You will read the OCRed page of a historical newspaper, dating from 1870 to 1910. In some sections "suffrage" should be mentioned.
+
+Please summarize the relevant sections.
+
+There will be OCR errors in the text - try to ignore them as best as possible. If in doubt do NOT try to correct illegible OCR passages and do not supply probable substitutions for illegible text.
+
+</div>
+
+--
+
+#### KI & OpenRefine
+
+<img src="media/summary.png" style="height: 400px; margin: 0 auto 4rem auto; background: transparent;">
+
+
+---
+
+## Vielen Dank für die Aufmerksamkeit!
+
+Survey: 
+
+roman.kuhn@sbb.spk-berlin.de
+
+
+</section>
+         
+        </script>
         
-            <section data-background-image="media/Logo_StabiLab_4c.svg" data-background-position="top 40px right 30px" data-background-size="200px">
-                <h3>Einstieg, Datenbereinigung</h3>
-            </section>
-            <section data-background-image="media/Logo_StabiLab_4c.svg" data-background-position="top 40px right 30px" data-background-size="200px">
-                <h3>Einstieg, Datenbereinigung - Vertical Slide 2</h3>
-            </section>
-        </section>
+      </div></div></body>
+    </div>
+    <script src="raphael-min.js"><
+      <script src="flowchart-latest.js"></script>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    
+    <script>
+      Reveal.initialize({
+    plugins: [ RevealMarkdown ]
+  });
+    </script>
+    
 
-
-
-		</div>
-	</div>
-
-	<!-- 
-    Content:
-    - Houskeeping:
-      - Unterbrechen!
-      -
-    - Ablauf
-    - Was ist OR, wie läuft es (browser, server, etc.), 
-
-    -->
-
-	<script src="dist/reveal.js"></script>
-	<script src="plugin/notes/notes.js"></script>
-	<script src="plugin/markdown/markdown.js"></script>
-	<script src="plugin/highlight/highlight.js"></script>
-	<script>
-		// More info about initialization & config:
-		// - https://revealjs.com/initialization/
-		// - https://revealjs.com/config/
-		Reveal.initialize({
-			hash: true,
-
-			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
-		});
-	</script>
-</body>
-
+  </body>
 </html>
